@@ -39,8 +39,8 @@
     }
   ],
   "scripts": {
-    "post-install-cmd": "/bin/bash -c '[ -f script/post-install-cmd.sh ] && /bin/bash script/post-install-cmd.sh'",
-    "post-update-cmd":  "/bin/bash -c '[ -f script/post-update-cmd.sh ] && /bin/bash script/post-update-cmd.sh'"
+    "post-install-cmd": "/bin/bash script/post-install-cmd.sh",
+    "post-update-cmd":  "/bin/bash script/post-update-cmd.sh"
   },
   "autoload": {
     "psr-4": {

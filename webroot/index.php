@@ -19,7 +19,7 @@ class PagesController
     $this->twig = new \Twig_Environment(new \Twig_Loader_Filesystem($app['TEMPLATES']));
   }
 
-  public function home(\Pee\App $app) {
-    echo $this->twig->render("home.html");
+  public function home(\Pee\App $app, array $params) {
+    echo $this->twig->render("home.html", $app->toArray());
   }
 }
