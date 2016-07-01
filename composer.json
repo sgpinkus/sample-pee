@@ -1,0 +1,50 @@
+  {
+  "name": "models",
+  "minimum-stability": "dev",
+  "prefer-source": true,
+  "require":
+  {
+    "sam-at-github/pee": "*",
+    "twig/twig": "1.15.*",
+    "jquery/jquery": "*",
+    "jquery/jqueryui": "*"
+  },
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "jquery/jquery",
+        "version": "1.11.1",
+        "dist": {
+          "url": "https://code.jquery.com/jquery-1.11.1.min.js",
+          "type": "file"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "jquery/jqueryui",
+        "version": "1.11.1",
+        "dist": {
+          "url": "https://code.jquery.com/ui/1.11.4/jquery-ui.min.js",
+          "type": "file"
+        }
+      }
+    },
+    {
+      "type": "vcs",
+      "name": "sam-at-github/pee",
+      "url": "ssh://git@git.localdomain:44022/var/git-a/pee"
+    }
+  ],
+  "scripts": {
+    "post-install-cmd": "/bin/bash -c '[ -f script/post-install-cmd.sh ] && /bin/bash script/post-install-cmd.sh'",
+    "post-update-cmd":  "/bin/bash -c '[ -f script/post-update-cmd.sh ] && /bin/bash script/post-update-cmd.sh'"
+  },
+  "autoload": {
+    "psr-4": {
+      "": "app/"
+    }
+  }
+}

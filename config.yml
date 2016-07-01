@@ -1,0 +1,12 @@
+TEMPLATES: ../templates/
+TEMP: ../tmp/
+CACHE: false
+DEBUG: 2
+LOGS: ../logs/
+LOCALES: ../dict/
+db:
+  user: test
+  password: password
+  host: localhost
+  port: 27017
+  db: test

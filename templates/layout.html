@@ -1,0 +1,34 @@
+{% import "menus.macro" as menus -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" lang="en-us" content="">
+  <link href="{{ BASE }}/css/layout.css" rel="stylesheet" type="text/css" />
+  {% for cssFile in css -%}
+  <link href="{{ BASE }}{{ cssFile }}" rel="stylesheet" type="text/css" />
+  {% endfor -%}
+  {% block css -%}{% endblock -%}
+  {% for scriptFile in script -%}
+  <script src="{{ BASE }}{{ scriptFile }}"></script>
+  {% endfor -%}
+  {% block script -%}{% endblock -%}
+</head>
+<body>
+  <header>
+    <nav>
+    {% block nav -%}
+    {% if MENU is defined -%}
+      {{ menus.recursivemenu(MENU.children, BASE) }}
+    {%- endif -%}
+    {%- endblock -%}
+    </nav>
+  </header>
+  <div id='content' class='ui-corner-all'>
+  {% block content -%}<h1>Content</h1>{% endblock -%}
+  </div>
+  <footer>
+  {% block footer -%}{%- endblock -%}
+  </footer>
+</body>
+</html>

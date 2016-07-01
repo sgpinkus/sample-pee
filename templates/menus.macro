@@ -1,0 +1,12 @@
+{% macro recursivemenu(menu, base, depth=0) %}
+  <ul class="menu-depth-{{ depth }}">
+  {% for menuitem in menu %}
+    <li>
+      <p><a href="{{ base }}{{ menuitem.link }}">{{ menuitem.title }}</a></p>
+    {% if menuitem.children is defined %}
+      {{ _self.recursivemenu(menuitem.children, base, depth+1) }}
+    {% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+{% endmacro %}
