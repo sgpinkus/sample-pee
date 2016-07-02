@@ -4,7 +4,7 @@
   "prefer-source": true,
   "require":
   {
-    "sam-at-github/pee": "*",
+    "sam-at-github/pee": "dev-master",
     "twig/twig": "1.15.*",
     "jquery/jquery": "*",
     "jquery/jqueryui": "*"
@@ -35,7 +35,7 @@
     {
       "type": "vcs",
       "name": "sam-at-github/pee",
-      "url": "ssh://git@git.localdomain:44022/var/git-a/pee"
+      "url": "https://github.com/sam-at-github/pee"
     }
   ],
   "scripts": {

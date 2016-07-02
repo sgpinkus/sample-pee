@@ -1,10 +1,11 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "222b37f92fe451781177768e4981279f",
+    "hash": "98165f116e46c4dbef54632cec346fae",
+    "content-hash": "dc0bfa423fd30d842e968a45799e297a",
     "packages": [
         {
             "name": "jquery/jquery",
@@ -80,8 +81,14 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "ssh://git@git.localdomain:44022/var/git-a/pee",
-                "reference": "93a88818c7019eab55c5d782b48ce6eb064902bf"
+                "url": "https://github.com/sam-at-github/pee.git",
+                "reference": "ea7c5ac574b6738ac85ad4fbdcdc09cda22bbae5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sam-at-github/pee/zipball/ea7c5ac574b6738ac85ad4fbdcdc09cda22bbae5",
+                "reference": "ea7c5ac574b6738ac85ad4fbdcdc09cda22bbae5",
+                "shasum": ""
             },
             "require": {
                 "psr/log": "1.0.*"
@@ -92,7 +99,11 @@
                     "Pee\\": "."
                 }
             },
-            "time": "2016-05-30 01:14:08"
+            "support": {
+                "source": "https://github.com/sam-at-github/pee/tree/master",
+                "issues": "https://github.com/sam-at-github/pee/issues"
+            },
+            "time": "2016-07-02 14:37:54"
         },
         {
             "name": "twig/twig",
@@ -155,8 +166,11 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "sam-at-github/pee": 20
+    },
     "prefer-stable": false,
+    "prefer-lowest": false,
     "platform": [],
     "platform-dev": []
 }
