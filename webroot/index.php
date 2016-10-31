@@ -9,7 +9,8 @@ ini_set('display_errors', E_ALL);
 $app = App::instance('../config.yml');
 $pagesController = new PagesController($app);
 $app->addRoute('GET /', [$pagesController, 'home']);
-$app->addRoute('GET /x', [$pagesController, 'home']);
+$app->addRoute('GET /@path', [$pagesController, 'home']);
+$app->addRoute('GET /@@path', [$pagesController, 'home']);
 $app->run();
 
 class PagesController
@@ -21,6 +22,6 @@ class PagesController
   }
 
   public function home(\Pee\App $app, array $params) {
-    echo $this->twig->render("home.html", $app->toArray());
+    echo $this->twig->render("home.html", ['path' => $params['path']] + $app->toArray());
   }
 }

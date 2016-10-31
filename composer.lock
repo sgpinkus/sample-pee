@@ -82,12 +82,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sam-at-github/pee.git",
-                "reference": "ea7c5ac574b6738ac85ad4fbdcdc09cda22bbae5"
+                "reference": "1f89f44e2480f36eb918030c0eecc9c3762a710c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sam-at-github/pee/zipball/ea7c5ac574b6738ac85ad4fbdcdc09cda22bbae5",
-                "reference": "ea7c5ac574b6738ac85ad4fbdcdc09cda22bbae5",
+                "url": "https://api.github.com/repos/sam-at-github/pee/zipball/1f89f44e2480f36eb918030c0eecc9c3762a710c",
+                "reference": "1f89f44e2480f36eb918030c0eecc9c3762a710c",
                 "shasum": ""
             },
             "require": {
@@ -103,7 +103,7 @@
                 "source": "https://github.com/sam-at-github/pee/tree/master",
                 "issues": "https://github.com/sam-at-github/pee/issues"
             },
-            "time": "2016-07-02 14:37:54"
+            "time": "2016-07-02 15:55:29"
         },
         {
             "name": "twig/twig",
