@@ -21,6 +21,16 @@ class PagesController
     $this->twig = new \Twig_Environment(new \Twig_Loader_Filesystem($app['TEMPLATES']));
   }
 
+  public function beforeRoute(\Pee\App $app) {
+  }
+
+  public function afterRoute(\Pee\App $app, $result) {
+  }
+
+  public function onException(\Pee\App $app, \Exception $exception) {
+    echo $this->twig->render("exception.html", ['exception' => $exception]);
+  }
+
   public function home(\Pee\App $app, array $params) {
     echo $this->twig->render("home.html", ['path' => $params['path']] + $app->toArray());
   }

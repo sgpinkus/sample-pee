@@ -35,12 +35,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "d8e60a5619fff77f9669da8997697443ef1a1d7e"
+                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/d8e60a5619fff77f9669da8997697443ef1a1d7e",
-                "reference": "d8e60a5619fff77f9669da8997697443ef1a1d7e",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
                 "shasum": ""
             },
             "require": {
@@ -74,7 +74,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-01-06 21:40:42"
+            "time": "2016-10-10 12:19:37"
         },
         {
             "name": "sam-at-github/pee",
@@ -82,12 +82,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sam-at-github/pee.git",
-                "reference": "1f89f44e2480f36eb918030c0eecc9c3762a710c"
+                "reference": "9290972ea812d9afcd8ccd06451220939b60f881"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sam-at-github/pee/zipball/1f89f44e2480f36eb918030c0eecc9c3762a710c",
-                "reference": "1f89f44e2480f36eb918030c0eecc9c3762a710c",
+                "url": "https://api.github.com/repos/sam-at-github/pee/zipball/9290972ea812d9afcd8ccd06451220939b60f881",
+                "reference": "9290972ea812d9afcd8ccd06451220939b60f881",
                 "shasum": ""
             },
             "require": {
@@ -97,13 +97,16 @@
             "autoload": {
                 "psr-4": {
                     "Pee\\": "."
-                }
+                },
+                "files": [
+                    "Exception/HttpEquivalentException.php"
+                ]
             },
             "support": {
                 "source": "https://github.com/sam-at-github/pee/tree/master",
                 "issues": "https://github.com/sam-at-github/pee/issues"
             },
-            "time": "2016-07-02 15:55:29"
+            "time": "2016-10-02 14:29:05"
         },
         {
             "name": "twig/twig",
