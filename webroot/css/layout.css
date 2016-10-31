@@ -1,0 +1,5 @@
+header, footer, article, div, body, html { border: 0; padding: 0; margin: 0; }
+html, body { height: 100%; }
+body { display:flex; flex-flow: column wrap; }
+header, footer { background-color: black; max-height: 40px; min-height: 40px; text-align: center; }
+body article { width: 90%; margin:auto auto; border: solid 1px #000;  }
