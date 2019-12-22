@@ -1,5 +1,5 @@
-  {
-  "name": "models",
+{
+  "name": "sam-at-github/sample-pee",
   "minimum-stability": "dev",
   "prefer-source": true,
   "require":
@@ -7,7 +7,8 @@
     "sam-at-github/pee": "dev-master",
     "twig/twig": "1.15.*",
     "jquery/jquery": "*",
-    "jquery/jqueryui": "*"
+    "jquery/jqueryui": "*",
+    "symfony/yaml": "^5.1@dev"
   },
   "repositories": [
     {
