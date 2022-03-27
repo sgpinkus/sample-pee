@@ -5,7 +5,7 @@
   "require":
   {
     "sam-at-github/pee": "dev-master",
-    "twig/twig": "1.15.*",
+    "twig/twig": "1.38.*",
     "jquery/jquery": "*",
     "jquery/jqueryui": "*",
     "symfony/yaml": "^5.1@dev"
